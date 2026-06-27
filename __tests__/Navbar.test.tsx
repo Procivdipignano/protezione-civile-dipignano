@@ -12,7 +12,7 @@ jest.mock("next/link", () => {
 
 describe("Navbar", () => {
   beforeEach(() => {
-    Object.defineProperty(window, "scrollY", { writable: true, value: 0 });
+    Object.defineProperty(window, "scrollY", { writable: true, configurable: true, value: 0 });
   });
 
   it("renders logo and all nav links", () => {
@@ -33,7 +33,7 @@ describe("Navbar", () => {
   it("becomes solid after scroll past 80px", () => {
     render(<Navbar />);
     act(() => {
-      Object.defineProperty(window, "scrollY", { writable: true, value: 100 });
+      Object.defineProperty(window, "scrollY", { writable: true, configurable: true, value: 100 });
       window.dispatchEvent(new Event("scroll"));
     });
     const nav = screen.getByRole("navigation");
