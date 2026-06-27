@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
   { href: "/", label: "Home" },
@@ -26,9 +27,17 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-white font-bold text-sm flex items-center gap-2">
-          <span className="text-xl">🔺</span>
-          PROTEZIONE CIVILE DIPIGNANO
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/images/logo.jpg"
+            alt="Logo Protezione Civile Dipignano"
+            width={44}
+            height={44}
+            className="rounded-full"
+          />
+          <span className="text-white font-bold text-sm hidden sm:block">
+            PROTEZIONE CIVILE DIPIGNANO
+          </span>
         </Link>
         <ul className="hidden md:flex gap-8">
           {links.map((link) => (

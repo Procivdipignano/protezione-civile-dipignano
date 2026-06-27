@@ -1,13 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-pc-navy text-white">
       <div className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
         <div>
-          <div className="flex items-center gap-2 font-bold text-sm">
-            <span className="text-xl">🔺</span>
-            PROTEZIONE CIVILE DIPIGNANO
+          <div className="flex items-center gap-3">
+            <Image
+              src="/images/logo.jpg"
+              alt="Logo Protezione Civile Dipignano"
+              width={48}
+              height={48}
+              className="rounded-full"
+            />
+            <span className="font-bold text-sm">PROTEZIONE CIVILE DIPIGNANO</span>
           </div>
           <p className="text-white/60 text-sm mt-3">
             Gruppo Volontari della Protezione Civile<br />
