@@ -1,0 +1,88 @@
+<h2>Layout Homepage — scegli uno stile</h2>
+<p class="subtitle">Menu: Home · Volontariato · Chi Siamo · Contatti</p>
+
+<div class="cards">
+
+  <!-- OPZIONE A -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f0f4f8;padding:16px;font-family:sans-serif;font-size:12px;color:#333">
+      <div style="background:#cc2200;color:white;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <span style="font-weight:bold">🔺 PROTEZIONE CIVILE DIPIGNANO</span>
+        <span style="font-size:10px">Home · Volontariato · Chi Siamo · Contatti</span>
+      </div>
+      <div style="background:#1a1a2e;color:white;padding:40px 12px;text-align:center;margin-bottom:4px">
+        <div style="font-size:18px;font-weight:bold">Pronti a proteggere la comunità</div>
+        <div style="font-size:10px;margin-top:6px;opacity:0.8">Volontari al servizio di Dipignano</div>
+        <div style="margin-top:10px;background:#cc2200;display:inline-block;padding:5px 14px;border-radius:4px;font-size:10px">DIVENTA VOLONTARIO</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;margin-bottom:4px">
+        <div style="background:#fff;padding:8px;text-align:center;border-top:3px solid #cc2200"><div style="font-size:16px">🚒</div><div style="font-size:9px;margin-top:2px">Emergenze</div></div>
+        <div style="background:#fff;padding:8px;text-align:center;border-top:3px solid #cc2200"><div style="font-size:16px">👥</div><div style="font-size:9px;margin-top:2px">Volontari</div></div>
+        <div style="background:#fff;padding:8px;text-align:center;border-top:3px solid #cc2200"><div style="font-size:16px">📢</div><div style="font-size:9px;margin-top:2px">Notizie</div></div>
+      </div>
+      <div style="background:#fff;padding:8px;font-size:9px;color:#555">Ultime notizie / attività recenti...</div>
+    </div>
+    <div class="card-body">
+      <h3>A — Hero + Icone + News</h3>
+      <p>Immagine grande in apertura, 3 blocchi tematici, sezione notizie. Simile al sito di riferimento, stile istituzionale.</p>
+    </div>
+  </div>
+
+  <!-- OPZIONE B -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f0f4f8;padding:16px;font-family:sans-serif;font-size:12px;color:#333">
+      <div style="background:#cc2200;color:white;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <span style="font-weight:bold">🔺 PROTEZIONE CIVILE DIPIGNANO</span>
+        <span style="font-size:10px">Home · Volontariato · Chi Siamo · Contatti</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:4px">
+        <div style="background:#1a1a2e;color:white;padding:20px 10px">
+          <div style="font-size:13px;font-weight:bold">Protezione Civile<br/>Dipignano</div>
+          <div style="font-size:9px;margin-top:6px;opacity:0.8">Volontari al servizio della comunità dal 2024</div>
+          <div style="margin-top:8px;background:#cc2200;display:inline-block;padding:4px 10px;border-radius:4px;font-size:9px">Unisciti a noi</div>
+        </div>
+        <div style="background:#ddd;display:flex;align-items:center;justify-content:center;font-size:9px;color:#666">📷 Foto attività</div>
+      </div>
+      <div style="background:#fff;padding:8px;font-size:9px;border-left:3px solid #cc2200;margin-bottom:4px">Chi siamo — breve presentazione del gruppo</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px">
+        <div style="background:#fff;padding:6px;font-size:9px;border-left:3px solid #cc2200">📅 Ultima attività</div>
+        <div style="background:#fff;padding:6px;font-size:9px;border-left:3px solid #cc2200">📋 Come diventare volontario</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Split Hero + Presentazione</h3>
+      <p>Testo e foto fianco a fianco, sezione presentazione, card attività. Più moderno, mette in primo piano l'identità del gruppo.</p>
+    </div>
+  </div>
+
+  <!-- OPZIONE C -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f0f4f8;padding:16px;font-family:sans-serif;font-size:12px;color:#333">
+      <div style="background:white;padding:8px 12px;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #cc2200;margin-bottom:4px">
+        <span style="font-weight:bold;color:#cc2200">🔺 PROTEZIONE CIVILE DIPIGNANO</span>
+        <span style="font-size:10px;color:#333">Home · Volontariato · Chi Siamo · Contatti</span>
+      </div>
+      <div style="position:relative;background:#222;color:white;padding:50px 12px 20px;text-align:center;margin-bottom:4px;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(rgba(0,0,0,0.5),rgba(204,34,0,0.6));display:flex;align-items:center;justify-content:center;flex-direction:column;padding:12px">
+          <div style="font-size:16px;font-weight:bold">Protezione Civile Dipignano</div>
+          <div style="font-size:9px;margin-top:4px">Volontari per la sicurezza della comunità</div>
+          <div style="display:flex;gap:6px;margin-top:8px">
+            <div style="background:#cc2200;padding:4px 10px;border-radius:4px;font-size:9px">Volontariato</div>
+            <div style="background:white;color:#333;padding:4px 10px;border-radius:4px;font-size:9px">Chi siamo</div>
+          </div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:3px;margin-bottom:4px">
+        <div style="background:white;padding:6px;text-align:center;font-size:9px">🚒<br/>Missione</div>
+        <div style="background:white;padding:6px;text-align:center;font-size:9px">📸<br/>Galleria</div>
+        <div style="background:white;padding:6px;text-align:center;font-size:9px">📋<br/>Unisciti</div>
+        <div style="background:white;padding:6px;text-align:center;font-size:9px">📞<br/>Contatti</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Full-screen Hero + 4 accessi rapidi</h3>
+      <p>Foto a tutto schermo con overlay, 4 accessi rapidi. Impatto visivo forte, ideale con belle foto dall'archivio Facebook.</p>
+    </div>
+  </div>
+
+</div>
