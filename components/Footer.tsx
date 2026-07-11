@@ -51,8 +51,10 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10 text-center text-xs text-white/40 py-4">
-        © {new Date().getFullYear()} Protezione Civile Dipignano
+      <div className="border-t border-white/10 text-center text-xs text-white/40 py-4 space-x-4">
+        <span>© {new Date().getFullYear()} Protezione Civile Dipignano</span>
+        <Link href="/privacy-policy" className="hover:text-white/70 transition-colors">Privacy Policy</Link>
+        <Link href="/cookie-policy" className="hover:text-white/70 transition-colors">Cookie Policy</Link>
       </div>
     </footer>
   );
