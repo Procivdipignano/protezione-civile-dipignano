@@ -27,6 +27,15 @@ export default function ContattiPage() {
                 </div>
               </li>
               <li className="flex gap-3">
+                <span className="text-pc-red text-xl">📞</span>
+                <div>
+                  <span className="font-bold text-pc-navy block">Emergenze</span>
+                  <a href="tel:+393451746349" className="text-pc-red hover:underline text-lg font-semibold">
+                    +39 345 174 6349
+                  </a>
+                </div>
+              </li>
+              <li className="flex gap-3">
                 <span className="text-pc-red text-xl">📘</span>
                 <div>
                   <span className="font-bold text-pc-navy block">Facebook</span>

@@ -34,6 +34,11 @@ export default function Footer() {
           <h3 className="font-bold text-sm mb-4">Contatti</h3>
           <ul className="space-y-2 text-sm text-white/70">
             <li>
+              <a href="tel:+393451746349" className="hover:text-white transition-colors">
+                📞 +39 345 174 6349
+              </a>
+            </li>
+            <li>
               <a
                 href="https://www.facebook.com/profile.php?id=61576957454527"
                 target="_blank"

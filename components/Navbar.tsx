@@ -35,8 +35,9 @@ export default function Navbar() {
             height={44}
             className="rounded-full"
           />
-          <span className="text-white font-bold text-sm hidden sm:block">
+          <span className="text-white font-bold text-sm hidden sm:block leading-tight">
             PROTEZIONE CIVILE DIPIGNANO
+            <span className="block text-xs font-normal text-white/70">ODV</span>
           </span>
         </Link>
         <ul className="hidden md:flex gap-8">

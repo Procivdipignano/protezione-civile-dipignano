@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Volontariato — Protezione Civile Dipignano",
@@ -55,6 +56,41 @@ export default function VolontariatoPage() {
                   dalla Protezione Civile della Regione Calabria e da enti accreditati.
                 </p>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-12 p-6 border-2 border-pc-navy/10 rounded-lg flex items-center gap-4 flex-wrap">
+            <div className="flex-1 min-w-[200px]">
+              <h3 className="font-bold text-pc-navy">Modulo di iscrizione</h3>
+              <p className="mt-1 text-sm text-gray-600">
+                Scarica, compila e consegnaci il modulo per candidarti come volontario.
+              </p>
+            </div>
+            <a
+              href="/documents/modulo-iscrizione.docx"
+              download
+              className="inline-block bg-pc-navy text-white font-bold px-6 py-3 rounded hover:bg-pc-navy/90 transition-colors whitespace-nowrap"
+            >
+              SCARICA MODULO
+            </a>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+            <div className="relative h-64 rounded-lg overflow-hidden">
+              <Image
+                src="/images/canadair.jpg"
+                alt="Canadair Protezione Civile Nazionale"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-64 rounded-lg overflow-hidden">
+              <Image
+                src="/images/elicottero.jpg"
+                alt="Elicottero Protezione Civile"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
 

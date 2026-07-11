@@ -13,7 +13,7 @@ export default function Hero() {
         priority
       />
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/55" />
+      <div className="absolute inset-0 bg-black/30" />
       {/* Contenuto */}
       <div className="relative z-10 px-6 max-w-3xl">
         <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
