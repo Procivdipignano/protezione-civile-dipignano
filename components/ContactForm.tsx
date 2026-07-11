@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 type FormState = { nome: string; email: string; messaggio: string };
-type Errors = Partial<FormState>;
+type Errors = Partial<FormState> & { privacy?: string };
 
 export default function ContactForm() {
   const [form, setForm] = useState<FormState>({ nome: "", email: "", messaggio: "" });
+  const [privacy, setPrivacy] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
 
@@ -16,6 +18,7 @@ export default function ContactForm() {
     if (!form.email.trim()) e.email = "Email obbligatoria";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Email non valida";
     if (!form.messaggio.trim()) e.messaggio = "Messaggio obbligatorio";
+    if (!privacy) e.privacy = "Devi accettare la privacy policy per inviare il messaggio";
     return e;
   }
 
@@ -84,6 +87,24 @@ export default function ContactForm() {
           placeholder="Scrivi il tuo messaggio..."
         />
         {errors.messaggio && <p className="text-pc-red text-xs mt-1">{errors.messaggio}</p>}
+      </div>
+      <div>
+        <label className="flex items-start gap-3 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={privacy}
+            onChange={(e) => setPrivacy(e.target.checked)}
+            className="mt-0.5 w-4 h-4 accent-pc-red shrink-0"
+          />
+          <span className="text-sm text-gray-600">
+            Ho letto e accetto la{" "}
+            <Link href="/privacy-policy" className="text-pc-red hover:underline font-semibold">
+              Privacy Policy
+            </Link>
+            . Acconsento al trattamento dei miei dati personali per rispondere alla mia richiesta. *
+          </span>
+        </label>
+        {errors.privacy && <p className="text-pc-red text-xs mt-1">{errors.privacy}</p>}
       </div>
       <button
         type="submit"
