@@ -23,7 +23,7 @@ export default function ContattiPage() {
                 <span className="text-pc-red text-xl">📍</span>
                 <div>
                   <span className="font-bold text-pc-navy block">Sede</span>
-                  Via 24 Maggio n.10, Dipignano (CS)
+                  Via XXIV Maggio n.10, Dipignano (CS)
                 </div>
               </li>
               <li className="flex gap-3">
