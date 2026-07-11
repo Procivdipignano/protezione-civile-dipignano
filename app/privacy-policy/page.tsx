@@ -10,7 +10,7 @@ export default function PrivacyPolicyPage() {
     <>
       <section className="bg-pc-navy pt-32 pb-16 text-center">
         <h1 className="text-white text-4xl font-bold">Privacy Policy</h1>
-        <p className="text-white/70 mt-3">Informativa ai sensi dell'art. 13 GDPR (Reg. UE 2016/679)</p>
+        <p className="text-white/70 mt-3">Informativa ai sensi dell&apos;art. 13 GDPR (Reg. UE 2016/679)</p>
       </section>
 
       <section className="py-16 bg-white">
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
 
           <h2 className="text-xl font-bold text-pc-navy mt-8 mb-3">2. Dati trattati e finalità</h2>
           <p className="text-gray-600">
-            Attraverso questo sito vengono trattati esclusivamente i dati che l'utente fornisce
+            Attraverso questo sito vengono trattati esclusivamente i dati che l&apos;utente fornisce
             volontariamente compilando il modulo di contatto (nome, indirizzo email, messaggio).
             Tali dati sono trattati al solo scopo di rispondere alle richieste ricevute.
           </p>
@@ -38,8 +38,8 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-xl font-bold text-pc-navy mt-8 mb-3">3. Base giuridica</h2>
           <p className="text-gray-600">
             Il trattamento dei dati forniti tramite il modulo di contatto si basa sul consenso
-            dell'interessato (art. 6, par. 1, lett. a) GDPR) e sull'esecuzione di misure
-            precontrattuali adottate su richiesta dell'interessato (art. 6, par. 1, lett. b) GDPR).
+            dell&apos;interessato (art. 6, par. 1, lett. a) GDPR) e sull&apos;esecuzione di misure
+            precontrattuali adottate su richiesta dell&apos;interessato (art. 6, par. 1, lett. b) GDPR).
           </p>
 
           <h2 className="text-xl font-bold text-pc-navy mt-8 mb-3">4. Periodo di conservazione</h2>
@@ -53,12 +53,12 @@ export default function PrivacyPolicyPage() {
           <p className="text-gray-600">
             I dati non vengono comunicati a terzi né diffusi. Possono essere accessibili da
             eventuali fornitori di servizi tecnici (hosting, email) nei limiti strettamente
-            necessari all'erogazione del servizio.
+            necessari all&apos;erogazione del servizio.
           </p>
 
           <h2 className="text-xl font-bold text-pc-navy mt-8 mb-3">6. Diritti degli interessati</h2>
           <p className="text-gray-600">
-            Ai sensi degli artt. 15-22 GDPR, l'interessato ha diritto di:
+            Ai sensi degli artt. 15-22 GDPR, l&apos;interessato ha diritto di:
           </p>
           <ul className="list-disc pl-6 text-gray-600 space-y-1">
             <li>accedere ai propri dati personali;</li>
@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
             <li>proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" className="text-pc-red hover:underline">www.garanteprivacy.it</a>).</li>
           </ul>
           <p className="text-gray-600 mt-3">
-            Per esercitare tali diritti è possibile contattare il Titolare all'indirizzo email:{" "}
+            Per esercitare tali diritti è possibile contattare il Titolare all&apos;indirizzo email:{" "}
             <a href="mailto:protezionecivile.dipignano@gmail.com" className="text-pc-red hover:underline">
               protezionecivile.dipignano@gmail.com
             </a>

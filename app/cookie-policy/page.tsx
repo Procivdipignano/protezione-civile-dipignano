@@ -10,7 +10,7 @@ export default function CookiePolicyPage() {
     <>
       <section className="bg-pc-navy pt-32 pb-16 text-center">
         <h1 className="text-white text-4xl font-bold">Cookie Policy</h1>
-        <p className="text-white/70 mt-3">Informativa ai sensi del Provvedimento Garante Privacy dell'8 maggio 2014</p>
+        <p className="text-white/70 mt-3">Informativa ai sensi del Provvedimento Garante Privacy dell&apos;8 maggio 2014</p>
       </section>
 
       <section className="py-16 bg-white">
@@ -18,9 +18,9 @@ export default function CookiePolicyPage() {
 
           <h2 className="text-xl font-bold text-pc-navy mt-8 mb-3">Cosa sono i cookie</h2>
           <p className="text-gray-600">
-            I cookie sono piccoli file di testo che i siti visitati inviano al browser dell'utente,
+            I cookie sono piccoli file di testo che i siti visitati inviano al browser dell&apos;utente,
             dove vengono memorizzati per essere ritrasmessi alla visita successiva. Permettono
-            il corretto funzionamento del sito e migliorano l'esperienza di navigazione.
+            il corretto funzionamento del sito e migliorano l&apos;esperienza di navigazione.
           </p>
 
           <h2 className="text-xl font-bold text-pc-navy mt-8 mb-3">Cookie utilizzati da questo sito</h2>
