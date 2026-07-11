@@ -23,13 +23,13 @@ export default function ContattiPage() {
                 <span className="text-pc-red text-xl">📍</span>
                 <div>
                   <span className="font-bold text-pc-navy block">Sede</span>
-                  Comune di Dipignano (CS), Calabria
+                  Via 24 Maggio n.10, Dipignano (CS)
                 </div>
               </li>
               <li className="flex gap-3">
                 <span className="text-pc-red text-xl">📞</span>
                 <div>
-                  <span className="font-bold text-pc-navy block">Emergenze</span>
+                  <span className="font-bold text-pc-navy block">Per Informazioni</span>
                   <a href="tel:+393451746349" className="text-pc-red hover:underline text-lg font-semibold">
                     +39 345 174 6349
                   </a>
