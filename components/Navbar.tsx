@@ -13,6 +13,7 @@ const links = [
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 80);
@@ -23,11 +24,11 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-pc-navy shadow-lg" : "bg-transparent"
+        scrolled || open ? "bg-pc-navy shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <Image
             src="/images/logo.jpg"
             alt="Logo Protezione Civile Dipignano"
@@ -52,10 +53,31 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <button className="md:hidden text-white text-2xl" aria-label="Menu">
-          ☰
+        <button
+          className="md:hidden text-white text-2xl"
+          aria-label="Menu"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? "✕" : "☰"}
         </button>
       </div>
+      {open && (
+        <div className="md:hidden bg-pc-navy border-t border-white/10">
+          <ul className="flex flex-col px-6 py-4 gap-4">
+            {links.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-white text-base hover:text-pc-red transition-colors block"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
