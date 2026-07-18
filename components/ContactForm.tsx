@@ -22,14 +22,31 @@ export default function ContactForm() {
     return e;
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState("");
+
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length > 0) {
       setErrors(errs);
       return;
     }
-    setSubmitted(true);
+    setSending(true);
+    setSendError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nome: form.nome, email: form.email, messaggio: form.messaggio }),
+      });
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      setSendError("Errore nell'invio. Riprova o scrivici direttamente via email.");
+    } finally {
+      setSending(false);
+    }
   }
 
   if (submitted) {
@@ -106,11 +123,13 @@ export default function ContactForm() {
         </label>
         {errors.privacy && <p className="text-pc-red text-xs mt-1">{errors.privacy}</p>}
       </div>
+      {sendError && <p className="text-pc-red text-sm">{sendError}</p>}
       <button
         type="submit"
-        className="w-full bg-pc-red text-white font-bold py-3 rounded hover:bg-red-800 transition-colors"
+        disabled={sending}
+        className="w-full bg-pc-red text-white font-bold py-3 rounded hover:bg-red-800 transition-colors disabled:opacity-60"
       >
-        INVIA MESSAGGIO
+        {sending ? "INVIO IN CORSO..." : "INVIA MESSAGGIO"}
       </button>
     </form>
   );
