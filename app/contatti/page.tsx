@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import content from "@/content/contatti.json";
 
 export const metadata: Metadata = {
   title: "Contatti — Protezione Civile Dipignano",
@@ -10,8 +11,8 @@ export default function ContattiPage() {
   return (
     <>
       <section className="bg-pc-navy pt-32 pb-16 text-center">
-        <h1 className="text-white text-4xl font-bold">Contatti</h1>
-        <p className="text-white/70 mt-3">Siamo a tua disposizione</p>
+        <h1 className="text-white text-4xl font-bold">{content.page_title}</h1>
+        <p className="text-white/70 mt-3">{content.page_subtitle}</p>
       </section>
 
       <section className="py-20 bg-white">
@@ -22,30 +23,30 @@ export default function ContattiPage() {
               <li className="flex gap-3">
                 <span className="text-pc-red text-xl">📍</span>
                 <div>
-                  <span className="font-bold text-pc-navy block">Sede</span>
-                  Via XXIV Maggio n.10, Dipignano (CS)
+                  <span className="font-bold text-pc-navy block">{content.sede_label}</span>
+                  {content.sede}
                 </div>
               </li>
               <li className="flex gap-3">
                 <span className="text-pc-red text-xl">📞</span>
                 <div>
-                  <span className="font-bold text-pc-navy block">Per Informazioni</span>
-                  <a href="tel:+393451746349" className="text-pc-red hover:underline text-lg font-semibold">
-                    +39 345 174 6349
+                  <span className="font-bold text-pc-navy block">{content.telefono_label}</span>
+                  <a href={content.telefono_href} className="text-pc-red hover:underline text-lg font-semibold">
+                    {content.telefono}
                   </a>
                 </div>
               </li>
               <li className="flex gap-3">
                 <span className="text-pc-red text-xl">📘</span>
                 <div>
-                  <span className="font-bold text-pc-navy block">Facebook</span>
+                  <span className="font-bold text-pc-navy block">{content.facebook_label}</span>
                   <a
-                    href="https://www.facebook.com/profile.php?id=61576957454527"
+                    href={content.facebook_url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-pc-red hover:underline"
                   >
-                    Protezione Civile Dipignano
+                    {content.facebook_text}
                   </a>
                 </div>
               </li>

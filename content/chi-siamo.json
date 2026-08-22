@@ -1,0 +1,25 @@
+{
+  "storia_label": "La nostra storia",
+  "storia_title": "Nati per servire la comunità",
+  "storia_text1": "Il gruppo di Protezione Civile di Dipignano è attivo nel territorio comunale con l'obiettivo di supportare le istituzioni locali in situazioni di emergenza, prevenzione dei rischi e assistenza alla popolazione.",
+  "storia_text2": "I volontari del gruppo sono formati e operativi per interventi in caso di calamità naturali, eventi di pubblica utilità e attività di protezione del territorio.",
+  "storia_text3": "Il gruppo opera in coordinamento con la Protezione Civile della Regione Calabria e il Dipartimento Nazionale della Protezione Civile.",
+  "valori_title": "I nostri valori",
+  "valori": [
+    {
+      "icon": "🤝",
+      "title": "Solidarietà",
+      "text": "Siamo presenti per la comunità nei momenti di difficoltà, senza distinzioni."
+    },
+    {
+      "icon": "⚡",
+      "title": "Prontezza",
+      "text": "Formazione continua e organizzazione per rispondere rapidamente alle emergenze."
+    },
+    {
+      "icon": "🏔️",
+      "title": "Territorio",
+      "text": "Conosciamo il territorio di Dipignano e lavoriamo per proteggerlo."
+    }
+  ]
+}

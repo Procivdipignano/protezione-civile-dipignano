@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import QuickAccess from "@/components/QuickAccess";
 import ChiSiamoSection from "@/components/ChiSiamoSection";
 import Image from "next/image";
+import content from "@/content/home.json";
 
 export default function HomePage() {
   return (
@@ -17,7 +18,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
           <p className="text-white text-2xl md:text-3xl font-bold tracking-wide text-center drop-shadow-lg">
-            Sempre pronti a intervenire
+            {content.banner_text}
           </p>
         </div>
       </section>

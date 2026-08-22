@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import content from "@/content/chi-siamo.json";
 
 export const metadata: Metadata = {
   title: "Chi Siamo — Protezione Civile Dipignano",
@@ -20,25 +21,14 @@ export default function ChiSiamoPage() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <div>
             <span className="text-pc-red font-bold text-xs tracking-widest uppercase">
-              La nostra storia
+              {content.storia_label}
             </span>
             <h2 className="text-3xl font-bold text-pc-navy mt-2">
-              Nati per servire la comunità
+              {content.storia_title}
             </h2>
-            <p className="text-gray-600 mt-4 leading-relaxed">
-              Il gruppo di Protezione Civile di Dipignano è attivo nel territorio
-              comunale con l&apos;obiettivo di supportare le istituzioni locali in situazioni
-              di emergenza, prevenzione dei rischi e assistenza alla popolazione.
-            </p>
-            <p className="text-gray-600 mt-3 leading-relaxed">
-              I volontari del gruppo sono formati e operativi per interventi in caso di
-              calamità naturali, eventi di pubblica utilità e attività di protezione
-              del territorio.
-            </p>
-            <p className="text-gray-600 mt-3 leading-relaxed">
-              Il gruppo opera in coordinamento con la Protezione Civile della Regione
-              Calabria e il Dipartimento Nazionale della Protezione Civile.
-            </p>
+            <p className="text-gray-600 mt-4 leading-relaxed">{content.storia_text1}</p>
+            <p className="text-gray-600 mt-3 leading-relaxed">{content.storia_text2}</p>
+            <p className="text-gray-600 mt-3 leading-relaxed">{content.storia_text3}</p>
           </div>
           <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
             <Image
@@ -54,14 +44,10 @@ export default function ChiSiamoPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-2xl font-bold text-pc-navy text-center mb-12">
-            I nostri valori
+            {content.valori_title}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: "🤝", title: "Solidarietà", text: "Siamo presenti per la comunità nei momenti di difficoltà, senza distinzioni." },
-              { icon: "⚡", title: "Prontezza", text: "Formazione continua e organizzazione per rispondere rapidamente alle emergenze." },
-              { icon: "🏔️", title: "Territorio", text: "Conosciamo il territorio di Dipignano e lavoriamo per proteggerlo." },
-            ].map((v) => (
+            {content.valori.map((v) => (
               <div key={v.title} className="bg-white p-6 rounded-lg shadow-sm text-center">
                 <div className="text-4xl">{v.icon}</div>
                 <h3 className="font-bold text-pc-navy mt-3">{v.title}</h3>
