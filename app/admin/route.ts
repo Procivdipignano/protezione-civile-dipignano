@@ -9,6 +9,7 @@ const html = `<!doctype html>
     <title>Pannello Admin — Protezione Civile Dipignano</title>
   </head>
   <body>
+    <div id="nc-root"></div>
     <script src="https://unpkg.com/decap-cms@3.3.3/dist/decap-cms.js"></script>
     <script>
       CMS.init({
