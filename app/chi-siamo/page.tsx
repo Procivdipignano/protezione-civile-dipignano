@@ -32,7 +32,7 @@ export default function ChiSiamoPage() {
           </div>
           <div className="relative h-80 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/images/chi-siamo.jpg"
+              src={content.chi_siamo_image || "/images/chi-siamo.jpg"}
               alt="Volontari in attività"
               fill
               className="object-cover"

@@ -11,7 +11,7 @@ export default function HomePage() {
       <QuickAccess />
       <section className="relative h-80 overflow-hidden">
         <Image
-          src="/images/elicottero.jpg"
+          src={content.banner_image || "/images/elicottero.jpg"}
           alt="Elicottero Protezione Civile"
           fill
           className="object-cover object-center"

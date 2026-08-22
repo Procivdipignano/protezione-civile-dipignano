@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="/images/hero.jpg"
+        src={content.hero_image || "/images/hero.jpg"}
         alt="Protezione Civile Dipignano"
         fill
         className="object-cover"

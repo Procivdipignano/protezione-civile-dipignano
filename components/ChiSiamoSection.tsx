@@ -24,7 +24,7 @@ export default function ChiSiamoSection() {
         </div>
         <div className="relative h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/images/chi-siamo.jpg"
+            src={content.chi_siamo_image || "/images/chi-siamo.jpg"}
             alt="Volontari Protezione Civile Dipignano"
             fill
             className="object-cover"

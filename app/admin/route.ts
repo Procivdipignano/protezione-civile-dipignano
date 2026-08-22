@@ -42,7 +42,10 @@ const html = `<!doctype html>
                     { label: "Label Chi Siamo", name: "chi_siamo_label", widget: "string" },
                     { label: "Titolo Chi Siamo", name: "chi_siamo_title", widget: "string" },
                     { label: "Testo Chi Siamo 1", name: "chi_siamo_text1", widget: "text" },
-                    { label: "Testo Chi Siamo 2", name: "chi_siamo_text2", widget: "text" }
+                    { label: "Testo Chi Siamo 2", name: "chi_siamo_text2", widget: "text" },
+                    { label: "Foto Hero (sfondo)", name: "hero_image", widget: "image", required: false },
+                    { label: "Foto sezione Chi Siamo", name: "chi_siamo_image", widget: "image", required: false },
+                    { label: "Foto banner centrale", name: "banner_image", widget: "image", required: false }
                   ]
                 },
                 {
@@ -56,6 +59,7 @@ const html = `<!doctype html>
                     { label: "Testo storia 1", name: "storia_text1", widget: "text" },
                     { label: "Testo storia 2", name: "storia_text2", widget: "text" },
                     { label: "Testo storia 3", name: "storia_text3", widget: "text" },
+                    { label: "Foto pagina Chi Siamo", name: "chi_siamo_image", widget: "image", required: false },
                     { label: "Titolo valori", name: "valori_title", widget: "string" },
                     {
                       label: "Valori", name: "valori", widget: "list",
@@ -85,7 +89,9 @@ const html = `<!doctype html>
                       ]
                     },
                     { label: "Titolo CTA", name: "cta_title", widget: "string" },
-                    { label: "Sottotitolo CTA", name: "cta_subtitle", widget: "string" }
+                    { label: "Sottotitolo CTA", name: "cta_subtitle", widget: "string" },
+                    { label: "Foto 1 (canadair)", name: "image1", widget: "image", required: false },
+                    { label: "Foto 2 (elicottero)", name: "image2", widget: "image", required: false }
                   ]
                 },
                 {

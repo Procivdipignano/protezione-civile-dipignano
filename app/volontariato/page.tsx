@@ -50,16 +50,16 @@ export default function VolontariatoPage() {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
-                src="/images/canadair.jpg"
-                alt="Canadair Protezione Civile Nazionale"
+                src={content.image1 || "/images/canadair.jpg"}
+                alt="Foto Protezione Civile"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
-                src="/images/elicottero.jpg"
-                alt="Elicottero Protezione Civile"
+                src={content.image2 || "/images/elicottero.jpg"}
+                alt="Foto Protezione Civile"
                 fill
                 className="object-cover"
               />
