@@ -20,8 +20,8 @@ const html = `<!doctype html>
             base_url: "https://www.protezioneciviledipignano.it",
             auth_endpoint: "/api/auth"
           },
-          media_folder: "public/images/uploads",
-          public_folder: "/images/uploads",
+          media_folder: "public/images",
+          public_folder: "/images",
           locale: "it",
           collections: [
             {
