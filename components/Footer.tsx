@@ -10,7 +10,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <Image
-              src={homeContent.logo_image || "/images/logo.jpg"}
+              src={footerContent.logo_image || homeContent.logo_image || "/images/logo.jpg"}
               alt="Logo Protezione Civile Dipignano"
               width={48}
               height={48}

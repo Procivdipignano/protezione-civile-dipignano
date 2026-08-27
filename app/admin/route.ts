@@ -120,6 +120,7 @@ const html = `<!doctype html>
                   file: "content/footer.json",
                   format: "json",
                   fields: [
+                    { label: "Logo footer", name: "logo_image", widget: "image", required: false },
                     { label: "Nome organizzazione", name: "nome", widget: "string" },
                     { label: "Descrizione", name: "descrizione", widget: "text" },
                     { label: "Telefono", name: "telefono", widget: "string" },
