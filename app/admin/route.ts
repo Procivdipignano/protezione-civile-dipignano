@@ -113,6 +113,20 @@ const html = `<!doctype html>
                     { label: "Testo link Facebook", name: "facebook_text", widget: "string" },
                     { label: "URL Facebook", name: "facebook_url", widget: "string" }
                   ]
+                },
+                {
+                  name: "footer",
+                  label: "Footer",
+                  file: "content/footer.json",
+                  format: "json",
+                  fields: [
+                    { label: "Nome organizzazione", name: "nome", widget: "string" },
+                    { label: "Descrizione", name: "descrizione", widget: "text" },
+                    { label: "Telefono", name: "telefono", widget: "string" },
+                    { label: "Link telefono (tel:+39...)", name: "telefono_href", widget: "string" },
+                    { label: "URL Facebook", name: "facebook_url", widget: "string" },
+                    { label: "Testo copyright", name: "copyright", widget: "string" }
+                  ]
                 }
               ]
             }
