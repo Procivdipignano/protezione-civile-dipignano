@@ -44,6 +44,7 @@ const html = `<!doctype html>
                     { label: "Titolo Chi Siamo", name: "chi_siamo_title", widget: "string" },
                     { label: "Testo Chi Siamo 1", name: "chi_siamo_text1", widget: "text" },
                     { label: "Testo Chi Siamo 2", name: "chi_siamo_text2", widget: "text" },
+                    { label: "Logo sito (navbar)", name: "logo_image", widget: "image", required: false },
                     { label: "Foto Hero (sfondo)", name: "hero_image", widget: "image", required: false },
                     { label: "Foto sezione Chi Siamo", name: "chi_siamo_image", widget: "image", required: false },
                     { label: "Foto banner centrale", name: "banner_image", widget: "image", required: false }

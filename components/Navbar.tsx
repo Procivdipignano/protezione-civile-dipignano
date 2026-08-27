@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import homeContent from "@/content/home.json";
 
 const links = [
   { href: "/", label: "Home" },
@@ -30,7 +31,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <Image
-            src="/images/logo.jpg"
+            src={homeContent.logo_image || "/images/logo.jpg"}
             alt="Logo Protezione Civile Dipignano"
             width={44}
             height={44}
